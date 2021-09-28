@@ -4,8 +4,8 @@ const bodyParser=require('body-parser');//import bodyparser module
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 const MongoClient =require('mongodb').MongoClient;
-app.set("view image","ejs");
-app.use(express.static('public'));
+app.set("view image","ejs");// to set view engine as ejs
+app.use(express.static('public'));//take static content from public folder
 var db;
 //console.log(MongoClient);
 MongoClient.connect('mongodb://localhost:27017/inventory',(err,database)=>{
