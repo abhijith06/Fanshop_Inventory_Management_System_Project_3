@@ -36,7 +36,7 @@ app.post("/EditCost",(req,res)=>{
         //console.log(result);
         if(err)
         return console.log(err);
-        res.redirect("/"); 
+        res.redirect("/"); //Instead of writing again to render home page we simply redirect to route '/'
     })
 })
 app.post("/RemoveProduct",(req,res)=>{
