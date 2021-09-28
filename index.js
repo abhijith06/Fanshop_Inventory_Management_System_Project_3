@@ -1,6 +1,6 @@
-const express=require("express");
-const app=express();
-const bodyParser=require('body-parser');
+const express=require("express");//import express module
+const app=express();//create server.app is reference to server
+const bodyParser=require('body-parser');//import bodyparser module
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 const MongoClient =require('mongodb').MongoClient;
